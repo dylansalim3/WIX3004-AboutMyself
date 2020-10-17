@@ -4,15 +4,118 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_centerHorizontal="false"
+    android:layout_centerVertical="false"
+    android:background="@color/colorBackground"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/main_back_btn"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        app:icon="@drawable/ic_back"
+        app:iconTint="@color/colorTextPrimary"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="291dp"
+        android:layout_height="84dp"
+        android:text="@string/questionTxt1"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        app:fontFamily="@font/proxima_nova_black_res"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.205" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/questionText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.611"
+        android:gravity="center"
+        >
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_flat_selector"
+                android:button="@android:color/transparent"
+                android:paddingLeft="26dp"
+                android:paddingTop="9dp"
+                android:paddingRight="26dp"
+                android:paddingBottom="9dp"
+                android:text="@string/question1opt1"
+                android:textColor="@color/radio_flat_text_selector"
+                android:textSize="16sp"
+                app:fontFamily="@font/proxima_nova_regular" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="34dp" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_flat_selector"
+                android:button="@android:color/transparent"
+                android:paddingLeft="26dp"
+                android:paddingTop="9dp"
+                android:paddingRight="26dp"
+                android:paddingBottom="9dp"
+                android:text="@string/question1opt2"
+                android:textColor="@color/radio_flat_text_selector"
+                app:fontFamily="@font/proxima_nova_regular" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="34dp" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_flat_selector"
+                android:button="@android:color/transparent"
+                android:paddingLeft="26dp"
+                android:paddingTop="9dp"
+                android:paddingRight="26dp"
+                android:paddingBottom="9dp"
+                android:text="@string/question3opt3"
+                android:textColor="@color/radio_flat_text_selector"
+                app:fontFamily="@font/proxima_nova_regular" />
+
+
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submit_btn"
+        android:layout_width="300dp"
+        android:layout_height="46dp"
+        android:background="@drawable/radio_flat_selected"
+        android:text="@string/submit"
+        android:textSize="14sp"
+        app:fontFamily="@font/proxima_nova_regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.588"
+        app:rippleColor="@color/colorAccent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

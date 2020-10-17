@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">AboutMyself</string>
+    <string name="app_name">IntroScreen</string>
+    <string name="title_activity_intro">Activity Intro</string>
+    <string name="skip">Skip</string>
+    <string name="questionTxt1">Which statement is wrong about me?</string>
+    <string name="question1opt1">I hold a managerial role before starting my first degree</string>
+    <string name="question1opt2">I started my own business during MCO</string>
+    <string name="question3opt3">I am a freelance Web and Mobile App Developer</string>
+    <string name="submit">Submit</string>
+    <string name="backToQuestionPage">Back to Question Page</string>
+    <string name="correctTitle">Correct!</string>
+    <string name="correctDesc">You are genius! \nYou should be proud of yourself</string>
+    <string name="incorrectTitle">Incorrect!</string>
+    <string name="incorrectDesc">Awww...\nDo you want to try it again?</string>
 </resources>
