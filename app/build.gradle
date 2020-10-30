@@ -4,6 +4,10 @@ android {
     compileSdkVersion 29
     buildToolsVersion "30.0.2"
 
+    lintOptions {
+        abortOnError false
+    }
+
     defaultConfig {
         applicationId "com.dylansalim.aboutmyself"
         minSdkVersion 16
@@ -16,6 +20,7 @@ android {
 
     buildTypes {
         release {
+            crunchPngs false
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }

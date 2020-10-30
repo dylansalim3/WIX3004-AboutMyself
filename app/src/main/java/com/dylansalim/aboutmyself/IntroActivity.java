@@ -100,7 +100,7 @@ public class IntroActivity extends AppCompatActivity {
 
     private void setupOnboardingItems() {
         mList = new ArrayList<>();
-        mList.add(new ScreenItem("Hi There", "My Name is Dylan. \nI'm a Last Year Software Engineering Student", R.drawable.me));
+        mList.add(new ScreenItem("Hi There!", "My Name is Dylan. \nI'm a Final Year Software Engineering Student", R.drawable.me));
         mList.add(new ScreenItem("A little about me", "I love to discover new things, nothing can hold my curiosity.", R.drawable.img2));
         mList.add(new ScreenItem("Think you know about me?", "Challenge yourselves and try out the questionnaire", R.drawable.img3));
 
